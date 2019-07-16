@@ -2,8 +2,8 @@ namespace SignalRBug
 {
     public class PingClass
     {
-        public PingType Type;
-        public string Message;
+        public PingType Type { get; set; }
+        public string Message { get; set; }
 
         public override string ToString()
         {
