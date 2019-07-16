@@ -28,3 +28,5 @@ Ping (Hello) == Ping (Hello): True
 
 
 Sending happens in [Startup.cs](./SignalRBug/Startup.cs#L40)
+
+[Possible related issue](https://github.com/aspnet/AspNetCore/issues/11900)
