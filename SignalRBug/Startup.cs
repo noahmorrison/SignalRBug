@@ -14,7 +14,7 @@ namespace SignalRBug
         {
             services.AddCors();
 
-            services.AddSignalR().AddJsonProtocol();
+            services.AddSignalR().AddNewtonsoftJsonProtocol();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,7 +28,7 @@ namespace SignalRBug
 
             var connection = new HubConnectionBuilder()
                 .WithUrl("http://localhost:7778/SignalR")
-                .AddJsonProtocol()
+                .AddNewtonsoftJsonProtocol()
                 .Build();
 
             Task.Run(async () =>
